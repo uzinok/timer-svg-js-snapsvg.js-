@@ -8,7 +8,7 @@ var gulp = require("gulp"),
     server = require("browser-sync");
 
 gulp.task("less", function () {
-  return gulp.src("src/less/style.less")
+  return gulp.src(["src/less/style.less", "src/less/clock.less"])
     .pipe(plumber({
       errorHandler: notify.onError(function(err){
         return {
