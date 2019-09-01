@@ -1,5 +1,8 @@
 function svgTimer(myBlockTimer, hh, mm, ss) {
 
+
+  var timerNumberSec2 = myBlockTimer.querySelector(".sec2");
+
   // console.log(myBlockTimer);
   if (!document.querySelector(".timerblocknumber")) {
     var timerBlockNumber = document.createElement("div");
@@ -103,6 +106,53 @@ function svgTimer(myBlockTimer, hh, mm, ss) {
     sec1 = numberTimer[4],
     sec2 = numberTimer[5];
 
+    var hour1Svg = Snap(100, 200);
+    hour1Svg.appendTo(myBlockTimer);
+    hour1Svg.attr({
+      viewBox: "0 0 100 200"
+    });
+    var hour1SvgPath = hour1Svg.path("M87.3 94.1c-.1-.4-.1-.7-.2-1-.4-2.1-2-3.9-4.7-3.9-3.7 0-5.3 3.4-4.7 6.2v1.4c1.8 12.9.9 26.1-2.7 38.7-3.1 11-8 23-17.4 30.2-9.3 7.1-21 6.7-30.1-.5-9-7.1-13.2-17.9-15.1-28.9-2.2-12.3-2.1-25.1-1.8-37.5C11 85.4 12.4 72.1 15 59c2.1-10.7 4.8-21.7 10.2-31.2C30 19.4 39.7 8.2 50.7 10.4 62.3 12.8 66 31 68.4 40.5c3.7 14.4 5.4 29.1 5.6 44 .1 6.4 10.1 6.4 10 0-.2-15.7-2-31.4-5.9-46.6-3.1-11.8-7-26.7-17.7-34C49-3.8 35 1.9 26 10.6c-9.2 8.8-14.4 21.2-17.7 33.3-7.9 29.1-10.3 62-6 91.9C4.2 149 9 162.5 19.4 171.5c9.5 8.3 22.5 12.3 34.7 7.7 14.9-5.6 23.4-19.6 28.6-33.9 5.6-16.7 6.9-34.1 4.6-51.2z");
+
+    var hour2Svg = Snap(100, 200);
+    hour2Svg.appendTo(myBlockTimer);
+    hour2Svg.attr({
+      viewBox: "0 0 100 200"
+    });
+    var hour2SvgPath = hour2Svg.path("M87.3 94.1c-.1-.4-.1-.7-.2-1-.4-2.1-2-3.9-4.7-3.9-3.7 0-5.3 3.4-4.7 6.2v1.4c1.8 12.9.9 26.1-2.7 38.7-3.1 11-8 23-17.4 30.2-9.3 7.1-21 6.7-30.1-.5-9-7.1-13.2-17.9-15.1-28.9-2.2-12.3-2.1-25.1-1.8-37.5C11 85.4 12.4 72.1 15 59c2.1-10.7 4.8-21.7 10.2-31.2C30 19.4 39.7 8.2 50.7 10.4 62.3 12.8 66 31 68.4 40.5c3.7 14.4 5.4 29.1 5.6 44 .1 6.4 10.1 6.4 10 0-.2-15.7-2-31.4-5.9-46.6-3.1-11.8-7-26.7-17.7-34C49-3.8 35 1.9 26 10.6c-9.2 8.8-14.4 21.2-17.7 33.3-7.9 29.1-10.3 62-6 91.9C4.2 149 9 162.5 19.4 171.5c9.5 8.3 22.5 12.3 34.7 7.7 14.9-5.6 23.4-19.6 28.6-33.9 5.6-16.7 6.9-34.1 4.6-51.2z");
+
+    drawSplit();
+
+    var minute1Svg = Snap(100, 200);
+    minute1Svg.appendTo(myBlockTimer);
+    minute1Svg.attr({
+      viewBox: "0 0 100 200"
+    });
+    var minute1SvgPath = minute1Svg.path("M87.3 94.1c-.1-.4-.1-.7-.2-1-.4-2.1-2-3.9-4.7-3.9-3.7 0-5.3 3.4-4.7 6.2v1.4c1.8 12.9.9 26.1-2.7 38.7-3.1 11-8 23-17.4 30.2-9.3 7.1-21 6.7-30.1-.5-9-7.1-13.2-17.9-15.1-28.9-2.2-12.3-2.1-25.1-1.8-37.5C11 85.4 12.4 72.1 15 59c2.1-10.7 4.8-21.7 10.2-31.2C30 19.4 39.7 8.2 50.7 10.4 62.3 12.8 66 31 68.4 40.5c3.7 14.4 5.4 29.1 5.6 44 .1 6.4 10.1 6.4 10 0-.2-15.7-2-31.4-5.9-46.6-3.1-11.8-7-26.7-17.7-34C49-3.8 35 1.9 26 10.6c-9.2 8.8-14.4 21.2-17.7 33.3-7.9 29.1-10.3 62-6 91.9C4.2 149 9 162.5 19.4 171.5c9.5 8.3 22.5 12.3 34.7 7.7 14.9-5.6 23.4-19.6 28.6-33.9 5.6-16.7 6.9-34.1 4.6-51.2z");
+
+    var minute2Svg = Snap(100, 200);
+    minute2Svg.appendTo(myBlockTimer);
+    minute2Svg.attr({
+      viewBox: "0 0 100 200"
+    });
+    var minute2SvgPath = minute2Svg.path("M87.3 94.1c-.1-.4-.1-.7-.2-1-.4-2.1-2-3.9-4.7-3.9-3.7 0-5.3 3.4-4.7 6.2v1.4c1.8 12.9.9 26.1-2.7 38.7-3.1 11-8 23-17.4 30.2-9.3 7.1-21 6.7-30.1-.5-9-7.1-13.2-17.9-15.1-28.9-2.2-12.3-2.1-25.1-1.8-37.5C11 85.4 12.4 72.1 15 59c2.1-10.7 4.8-21.7 10.2-31.2C30 19.4 39.7 8.2 50.7 10.4 62.3 12.8 66 31 68.4 40.5c3.7 14.4 5.4 29.1 5.6 44 .1 6.4 10.1 6.4 10 0-.2-15.7-2-31.4-5.9-46.6-3.1-11.8-7-26.7-17.7-34C49-3.8 35 1.9 26 10.6c-9.2 8.8-14.4 21.2-17.7 33.3-7.9 29.1-10.3 62-6 91.9C4.2 149 9 162.5 19.4 171.5c9.5 8.3 22.5 12.3 34.7 7.7 14.9-5.6 23.4-19.6 28.6-33.9 5.6-16.7 6.9-34.1 4.6-51.2z");
+
+
+    drawSplit();
+
+    var sec1Svg = Snap(100, 200);
+    sec1Svg.appendTo(myBlockTimer);
+    sec1Svg.attr({
+      viewBox: "0 0 100 200"
+    });
+    var sec1SvgPath = sec1Svg.path("M87.3 94.1c-.1-.4-.1-.7-.2-1-.4-2.1-2-3.9-4.7-3.9-3.7 0-5.3 3.4-4.7 6.2v1.4c1.8 12.9.9 26.1-2.7 38.7-3.1 11-8 23-17.4 30.2-9.3 7.1-21 6.7-30.1-.5-9-7.1-13.2-17.9-15.1-28.9-2.2-12.3-2.1-25.1-1.8-37.5C11 85.4 12.4 72.1 15 59c2.1-10.7 4.8-21.7 10.2-31.2C30 19.4 39.7 8.2 50.7 10.4 62.3 12.8 66 31 68.4 40.5c3.7 14.4 5.4 29.1 5.6 44 .1 6.4 10.1 6.4 10 0-.2-15.7-2-31.4-5.9-46.6-3.1-11.8-7-26.7-17.7-34C49-3.8 35 1.9 26 10.6c-9.2 8.8-14.4 21.2-17.7 33.3-7.9 29.1-10.3 62-6 91.9C4.2 149 9 162.5 19.4 171.5c9.5 8.3 22.5 12.3 34.7 7.7 14.9-5.6 23.4-19.6 28.6-33.9 5.6-16.7 6.9-34.1 4.6-51.2z");
+
+    var sec2Svg = Snap(100, 200);
+    sec2Svg.appendTo(myBlockTimer);
+    sec2Svg.attr({
+      viewBox: "0 0 100 200"
+    });
+    var sec2SvgPath = sec2Svg.path("M87.3 94.1c-.1-.4-.1-.7-.2-1-.4-2.1-2-3.9-4.7-3.9-3.7 0-5.3 3.4-4.7 6.2v1.4c1.8 12.9.9 26.1-2.7 38.7-3.1 11-8 23-17.4 30.2-9.3 7.1-21 6.7-30.1-.5-9-7.1-13.2-17.9-15.1-28.9-2.2-12.3-2.1-25.1-1.8-37.5C11 85.4 12.4 72.1 15 59c2.1-10.7 4.8-21.7 10.2-31.2C30 19.4 39.7 8.2 50.7 10.4 62.3 12.8 66 31 68.4 40.5c3.7 14.4 5.4 29.1 5.6 44 .1 6.4 10.1 6.4 10 0-.2-15.7-2-31.4-5.9-46.6-3.1-11.8-7-26.7-17.7-34C49-3.8 35 1.9 26 10.6c-9.2 8.8-14.4 21.2-17.7 33.3-7.9 29.1-10.3 62-6 91.9C4.2 149 9 162.5 19.4 171.5c9.5 8.3 22.5 12.3 34.7 7.7 14.9-5.6 23.4-19.6 28.6-33.9 5.6-16.7 6.9-34.1 4.6-51.2z");
+
 
   var myTimer = setInterval(() => {
     sec2--;
@@ -135,28 +185,27 @@ function svgTimer(myBlockTimer, hh, mm, ss) {
               if (hour1 == -1) {
                 clearInterval(myTimer);
               }
-              update_number(Snap.select("#hour1"), hour1)
+              update_number(hour1SvgPath, hour1)
             }
-            update_number(Snap.select("#hour2"), hour2)
+            update_number(hour2SvgPath, hour2)
           }
-          update_number(Snap.select("#minute1"), minute1)
+          update_number(minute1SvgPath, minute1)
         }
-        update_number(Snap.select("#minute2"), minute2)
+        update_number(minute2SvgPath, minute2)
       }
-      update_number(Snap.select("#sec1"), sec1)
+      update_number(sec1SvgPath, sec1)
     }
-
-    update_number(Snap.select("#sec2"), sec2)
+    update_number(sec2SvgPath, sec2)
 
     
   }, 1000)
 
-  update_number(Snap.select("#hour1"), hour1)
-  update_number(Snap.select("#hour2"), hour2)
-  update_number(Snap.select("#minute1"), minute1)
-  update_number(Snap.select("#minute2"), minute2)
-  update_number(Snap.select("#sec1"), sec1)
-  update_number(Snap.select("#sec2"), sec2)
+  update_number(hour1SvgPath, hour1)
+  update_number(hour2SvgPath, hour2)
+  update_number(minute1SvgPath, minute1)
+  update_number(minute2SvgPath, minute2)
+  update_number(sec1SvgPath, sec1)
+  update_number(sec2SvgPath, sec2)
 
 
 
@@ -164,5 +213,15 @@ function svgTimer(myBlockTimer, hh, mm, ss) {
     numberTimer.animate({
       d: Snap.select("#d_" + n)
     }, 300, mina.linear)
+  }
+
+  function drawSplit () {
+    var svgSplit = Snap(100, 200);
+    svgSplit.attr({
+      viewBox: "0 0 100 200"
+    });
+    svgSplit.appendTo(myBlockTimer)
+    var circleTop = svgSplit.circle(50, 66, 15)
+    var circleBottom = svgSplit.circle(50, 132, 15)
   }
 }
