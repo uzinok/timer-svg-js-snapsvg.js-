@@ -5,7 +5,7 @@ window.onload = function () {
     myBlockTimer = document.querySelector(".timer-js"),
     // старт для обратного отсчета
     // два часа, пятндцать минут, тридцать секунд
-    hh = 11,
+    hh = 111,
     mm =  "12",
     ss = 13;
 
@@ -20,5 +20,7 @@ window.onload = function () {
   mm =  "10",
   ss = 0;
 
-svgTimer(myBlockTimer1, hh, mm, ss);
+svgTimer(myBlockTimer1);
+
+svgTimer(document.querySelector(".timer2-js"), 0, 0, 3);
 };
