@@ -41,7 +41,9 @@
   
   &lt;script src="путь_до_скрипта/timer.min.js"&gt;&lt;/script&gt;
   
+  
   <script>
+  
     window.onload = function () {
 
 
@@ -64,4 +66,5 @@
       svgTimer(document.querySelector(".timer1-js"));
 
     };
+    
   </script>
