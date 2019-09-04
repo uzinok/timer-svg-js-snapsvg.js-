@@ -35,14 +35,11 @@
 использование
 -----------------------------------
 
-  <div class="timer timer-js"></div><br>
-  <div class="timer timer1-js"></div><br>
-<br>
-<br>
-  <script src="путь_до_скрипта/timer.min.js"></script><br>
-<br>
-  <script><br>
-    window.onload = function () {<br>
+  &lt;div class="timer timer-js">&lt;/div>
+  &lt;div class="timer timer1-js">&lt;/div>
+  &lt;script src="путь_до_скрипта/timer.min.js">&lt;/script>
+  <script>
+    window.onload = function () {
 
 
       var
@@ -65,6 +62,3 @@
 
     };
   </script>
-</body>
-
-</html>
