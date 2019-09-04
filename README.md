@@ -35,26 +35,14 @@
 использование
 -----------------------------------
 
-<!DOCTYPE html><br>
-<html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Timer svg </title>
-</head>
-
-<body>
-
-  <div class="timer timer-js"></div>
-  <div class="timer timer1-js"></div>
-
-
-  <script src="путь_до_скрипта/timer.min.js"></script>
-
-  <script>
-    window.onload = function () {
+  <div class="timer timer-js"></div><br>
+  <div class="timer timer1-js"></div><br>
+<br>
+<br>
+  <script src="путь_до_скрипта/timer.min.js"></script><br>
+<br>
+  <script><br>
+    window.onload = function () {<br>
 
 
       var
