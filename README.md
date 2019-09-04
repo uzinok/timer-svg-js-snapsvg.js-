@@ -42,29 +42,29 @@
   &lt;script src="путь_до_скрипта/timer.min.js"&gt;&lt;/script&gt;
   
   
-  <script>
-  
-    window.onload = function () {
+  <script><br>
+  <br>
+    window.onload = function () {<br>
+<br>
 
-
-      var
-        
-        // блок в котором будет таймер
-        myBlockTimer = document.querySelector(".timer-js"),
-        
-        // старт для обратного отсчета
-        // часы
-        hh = 111, // 99
-        // минуты
-        mm = 12,
-        // секунды
-        ss = 13;
-
-      svgTimer(myBlockTimer, hh, mm, ss);
-
-      // время по умолчанию 15 минут
-      svgTimer(document.querySelector(".timer1-js"));
-
-    };
-    
+      var<br>
+        <br>
+        // блок в котором будет таймер<br>
+        myBlockTimer = document.querySelector(".timer-js"),<br>
+        <br>
+        // старт для обратного отсчета<br>
+        // часы<br>
+        hh = 111, // 99<br>
+        // минуты<br>
+        mm = 12,<br>
+        // секунды<br>
+        ss = 13;<br>
+<br>
+      svgTimer(myBlockTimer, hh, mm, ss);<br>
+<br>
+      // время по умолчанию 15 минут<br>
+      svgTimer(document.querySelector(".timer1-js"));<br>
+<br>
+    };<br>
+    <br>
   </script>
