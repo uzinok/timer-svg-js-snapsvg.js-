@@ -64,5 +64,5 @@
     <br>
   </script>
   
-  [демо](http://timer.uzinok.ru/)
+  [демо и разбор кода на моем сайте](http://uzinok.ru/js_demo/timer-snapsvg/)
 -----------------------------------
