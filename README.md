@@ -35,7 +35,7 @@
 использование
 -----------------------------------
 
-<!DOCTYPE html>
+<!DOCTYPE html><br>
 <html lang="ru">
 
 <head>
