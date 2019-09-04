@@ -35,9 +35,9 @@
 использование
 -----------------------------------
 
-  &lt;div class="timer timer-js">&lt;/div>
-  &lt;div class="timer timer1-js">&lt;/div>
-  &lt;script src="путь_до_скрипта/timer.min.js">&lt;/script>
+  &lt;div class="timer timer-js"&gt;&lt;/div&gt;
+  &lt;div class="timer timer1-js"&gt;&lt;/div&gt;
+  &lt;script src="путь_до_скрипта/timer.min.js"&gt;&lt;/script&gt;
   <script>
     window.onload = function () {
 
